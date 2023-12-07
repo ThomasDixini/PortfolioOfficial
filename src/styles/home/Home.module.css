@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 0 7rem;
   overflow: hidden;
   background: rgb(2, 0, 36);
   background: radial-gradient(
@@ -48,6 +49,7 @@
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  line-height: 0.8;
 }
 
 .a {
@@ -64,4 +66,58 @@
   margin-left: auto;
   text-align: right;
   font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .userSection {
+    font-size: larger;
+  }
+  .description {
+    font-size: 8rem;
+  }
+  .separationLinks {
+    font-size: 4.8rem;
+  }
+  .li {
+    font-size: 2.4rem;
+  }
+  .p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .userSection {
+    font-size: large;
+  }
+  .description {
+    font-size: 6.4rem;
+  }
+  .separationLinks {
+    font-size: 3.84rem;
+  }
+  .li {
+    font-size: 1.92rem;
+  }
+  .p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 548px) {
+  .userSection {
+    font-size: medium;
+  }
+  .description {
+    font-size: 5.12rem;
+  }
+  .separationLinks {
+    font-size: 3rem;
+  }
+  .li {
+    font-size: 1.536rem;
+  }
+  .p {
+    font-size: 0.56rem;
+  }
 }
