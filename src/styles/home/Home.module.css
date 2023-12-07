@@ -2,9 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   padding: 0 7rem;
-  overflow: hidden;
+}
+
+.userSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: x-large;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: calc(100vh + 5rem);
+  z-index: -1;
   background: rgb(2, 0, 36);
   background: radial-gradient(
     circle,
@@ -16,12 +34,10 @@
   );
 }
 
-.userSection {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: x-large;
+.wavesPath {
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
 }
 
 .description {
@@ -68,6 +84,10 @@
   font-size: 1rem;
 }
 
+.projects {
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .userSection {
     font-size: larger;
@@ -83,6 +103,9 @@
   }
   .p {
     font-size: 0.875rem;
+  }
+  .wavesPath {
+    bottom: -2%;
   }
 }
 
@@ -102,6 +125,9 @@
   .p {
     font-size: 0.7rem;
   }
+  .background {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 548px) {
@@ -119,5 +145,8 @@
   }
   .p {
     font-size: 0.56rem;
+  }
+  .background {
+    height: 100vh;
   }
 }
