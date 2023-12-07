@@ -3,16 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   height: 100vh;
   padding: 0 7rem;
-}
-
-.userSection {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: x-large;
 }
 
 .background {
@@ -32,6 +25,33 @@
     rgba(7, 45, 145, 1) 97%,
     rgba(9, 9, 121, 1) 100%
   );
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15vh;
+  z-index: 9999;
+}
+
+.sections > section:first-child + section {
+  margin-top: 100vh;
+}
+
+.userSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: x-large;
+}
+
+.summaryUser {
+  position: relative;
+  z-index: 9999;
 }
 
 .wavesPath {
@@ -85,7 +105,6 @@
 }
 
 .projects {
-  width: 100%;
 }
 
 @media (max-width: 1024px) {
