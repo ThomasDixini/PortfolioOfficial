@@ -1,6 +1,8 @@
 import styles from "@/styles/home/Home.module.css";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { GrNotes } from "react-icons/gr";
+import dispositivos from "../assets/dispositivos.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -59,8 +61,46 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className={styles.projects}>
-          <h1> Heloo world</h1>
+        <section className={styles.projectsSection}>
+          <h1> Projetos </h1>
+          <div className={styles.projects}>
+            <article>
+              <Image src={dispositivos} alt="" width={400} height={300} />
+              <span> ESTUDO DE CASO </span>
+              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
+              <div>
+                <button type="button"> Ler mais </button>
+                <a href="#"> Link do Projeto </a>
+              </div>
+            </article>
+            <article>
+              <Image src={dispositivos} alt="" width={400} height={300} />
+              <span> ESTUDO DE CASO </span>
+              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
+              <div>
+                <button type="button"> Ler mais </button>
+                <a href="#"> Link do Projeto </a>
+              </div>
+            </article>
+            <article>
+              <Image src={dispositivos} alt="" width={400} height={300} />
+              <span> ESTUDO DE CASO </span>
+              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
+              <div>
+                <button type="button"> Ler mais </button>
+                <a href="#"> Link do Projeto </a>
+              </div>
+            </article>
+            <article>
+              <Image src={dispositivos} alt="" width={400} height={300} />
+              <span> ESTUDO DE CASO </span>
+              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
+              <div>
+                <button type="button"> Ler mais </button>
+                <a href="#"> Link do Projeto </a>
+              </div>
+            </article>
+          </div>
         </section>
       </div>
     </main>

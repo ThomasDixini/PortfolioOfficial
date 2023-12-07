@@ -35,10 +35,11 @@
   position: absolute;
   top: 15vh;
   z-index: 9999;
+  padding-bottom: 5rem;
 }
 
 .sections > section:first-child + section {
-  margin-top: 100vh;
+  margin-top: 60vh;
 }
 
 .userSection {
@@ -104,7 +105,83 @@
   font-size: 1rem;
 }
 
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.projectsSection h1 {
+  font-size: 3rem;
+  color: rgb(2, 0, 36);
+}
+
 .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8rem;
+}
+
+.projects article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(2, 0, 36);
+}
+
+.projects article div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projects article div a {
+  padding: 1rem 2.5rem;
+  background-color: rgb(2, 0, 36);
+  color: white;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: all 0.2s;
+}
+
+.projects article div button {
+  border: 2px solid rgb(2, 0, 36);
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.projects article div button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(2, 0, 36);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.projects article div button:hover {
+  color: white;
+}
+
+.projects article div button:hover::before {
+  width: 100%;
+  border-radius: 0;
+}
+
+.projects article div a:hover {
+  box-shadow: 4px 4px 2px rgb(20, 75, 170);
 }
 
 @media (max-width: 1024px) {
