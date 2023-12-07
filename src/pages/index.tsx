@@ -41,7 +41,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li className={styles.li}>
-                    <a href="" className={styles.a}>
+                    <a href="../assets/cv.pdf" download className={styles.a}>
                       {" "}
                       <GrNotes />{" "}
                     </a>
