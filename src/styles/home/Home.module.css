@@ -134,6 +134,11 @@
   color: rgb(2, 0, 36);
 }
 
+.projects article img {
+  max-width: 400px;
+  min-width: 300px;
+}
+
 .projects article div {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -203,6 +208,20 @@
   .wavesPath {
     bottom: -2%;
   }
+
+  .sections {
+    top: 30vh;
+  }
+
+  .projects {
+    margin-top: 6rem;
+    gap: 2rem;
+  }
+
+  .projects article div a {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -223,6 +242,14 @@
   }
   .background {
     height: 100vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .sections {
+    top: 30vh;
   }
 }
 

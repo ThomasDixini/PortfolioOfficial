@@ -87,7 +87,11 @@ export default function Home() {
           <h1> Projetos </h1>
           <div className={styles.projects}>
             <article>
-              <Image src={dispositivos} alt="" width={400} height={300} />
+              <Image
+                src={dispositivos}
+                alt="Imagem de projeto"
+                layout="responsive"
+              />
               <span> ESTUDO DE CASO </span>
               <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
               <div>
@@ -99,7 +103,11 @@ export default function Home() {
               </div>
             </article>
             <article>
-              <Image src={dispositivos} alt="" width={400} height={300} />
+              <Image
+                src={dispositivos}
+                alt="Imagem de projeto"
+                layout="responsive"
+              />
               <span> ESTUDO DE CASO </span>
               <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
               <div>
@@ -108,7 +116,11 @@ export default function Home() {
               </div>
             </article>
             <article>
-              <Image src={dispositivos} alt="" width={400} height={300} />
+              <Image
+                src={dispositivos}
+                alt="Imagem de projeto"
+                layout="responsive"
+              />
               <span> ESTUDO DE CASO </span>
               <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
               <div>
@@ -117,7 +129,11 @@ export default function Home() {
               </div>
             </article>
             <article>
-              <Image src={dispositivos} alt="" width={400} height={300} />
+              <Image
+                src={dispositivos}
+                alt="Imagem de projeto"
+                layout="responsive"
+              />
               <span> ESTUDO DE CASO </span>
               <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
               <div>
