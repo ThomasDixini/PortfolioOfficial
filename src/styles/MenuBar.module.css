@@ -1,0 +1,22 @@
+.menu {
+  position: fixed;
+  z-index: 99999;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0.75rem;
+  border-radius: 24px;
+  list-style: none;
+  background-color: rgb(62, 202, 241);
+  color: white;
+}
+
+.menu li {
+  padding: 0.5rem;
+  border-radius: 9999px;
+}
+
+.active {
+  background-color: red !important;
+}

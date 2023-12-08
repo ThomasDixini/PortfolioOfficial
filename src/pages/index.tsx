@@ -3,10 +3,16 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { GrNotes } from "react-icons/gr";
 import dispositivos from "../assets/dispositivos.png";
 import Image from "next/image";
+import { MenuBar } from "@/components/MenuBar";
+import { useState } from "react";
 
 export default function Home() {
+  const [active, setActive] = useState("");
+  console.log(active);
+
   return (
     <main className={styles.main}>
+      <MenuBar active={active} />
       <div className={styles.background}>
         <div className={styles.wavesPath}>
           <svg
@@ -23,7 +29,11 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.sections}>
-        <section className={styles.userSection}>
+        <section
+          id="user-resume"
+          className={styles.userSection}
+          onMouseEnter={() => setActive("user-resume")}
+        >
           <div className={styles.summaryUser}>
             <span> Oi✌️, Eu sou Thomás Dixini </span>
             <div className={styles.description}>
@@ -69,7 +79,11 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className={styles.projectsSection}>
+        <section
+          id="projects"
+          className={styles.projectsSection}
+          onMouseEnter={() => setActive("projects")}
+        >
           <h1> Projetos </h1>
           <div className={styles.projects}>
             <article>
@@ -113,6 +127,7 @@ export default function Home() {
             </article>
           </div>
         </section>
+        <section id="skills" onMouseEnter={() => setActive("skills")}></section>
       </div>
     </main>
   );
