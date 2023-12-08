@@ -31,13 +31,21 @@ export default function Home() {
                 <span> REACT </span>
                 <ul className={styles.ul}>
                   <li className={styles.li}>
-                    <a href="" className={styles.a}>
+                    <a
+                      href="https://br.linkedin.com/in/thomas-dixini"
+                      className={styles.a}
+                      target="_blank"
+                    >
                       {" "}
                       <FaLinkedin />{" "}
                     </a>
                   </li>
                   <li className={styles.li}>
-                    <a href="" className={styles.a}>
+                    <a
+                      href="https://github.com/ThomasDixini"
+                      className={styles.a}
+                      target="_blank"
+                    >
                       {" "}
                       <FaGithubSquare />{" "}
                     </a>
@@ -70,7 +78,10 @@ export default function Home() {
               <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
               <div>
                 <button type="button"> Ler mais </button>
-                <a href="#"> Link do Projeto </a>
+                <a href="https://shopthomas.netlify.app/" target="_blank">
+                  {" "}
+                  Link do Projeto{" "}
+                </a>
               </div>
             </article>
             <article>
