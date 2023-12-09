@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem 0.75rem;
+  padding: 1rem 0.5rem;
   border-radius: 24px;
   list-style: none;
   background-color: rgb(62, 202, 241);
@@ -14,9 +14,14 @@
 
 .menu li {
   padding: 0.5rem;
-  border-radius: 9999px;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .active {
-  background-color: red !important;
+  background-color: rgb(2, 0, 36);
 }

@@ -6,35 +6,30 @@ import { useRef, useState } from "react";
 
 interface MenuBarProps {
   active: string;
+  setActive: (data: string) => void;
 }
 
-export function MenuBar({ active }: MenuBarProps) {
-  const li = useRef<HTMLLIElement>(document.createElement("li"));
-
+export function MenuBar({ active, setActive }: MenuBarProps) {
   return (
     <>
       <menu className={styles.menu}>
-        <li
-          ref={li}
-          className={
-            active == "user-resume" ? (li.current.className = "active") : ""
-          }
-        >
+        <li className={active == "user-resume" ? styles.active : ""}>
           <a
             href="#user-resume"
             className={active == "user-resume" ? "active" : ""}
+            onClick={() => setActive("user-resume")}
           >
-            <CiUser size={24} />
+            <CiUser size={16} />
           </a>
         </li>
-        <li className={active == "projects" ? "active" : ""}>
-          <a href="#projects">
-            <GrProjects size={24} />
+        <li className={active == "projects" ? styles.active : ""}>
+          <a href="#projects" onClick={() => setActive("projects")}>
+            <GrProjects size={16} />
           </a>
         </li>
-        <li className={active == "skills" ? "active" : ""}>
-          <a href="#skills">
-            <DiCodeBadge size={24} />
+        <li className={active == "skills" ? styles.active : ""}>
+          <a href="#skills" onClick={() => setActive("skills")}>
+            <DiCodeBadge size={16} />
           </a>
         </li>
       </menu>

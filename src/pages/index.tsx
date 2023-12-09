@@ -8,11 +8,10 @@ import { useState } from "react";
 
 export default function Home() {
   const [active, setActive] = useState("");
-  console.log(active);
 
   return (
     <main className={styles.main}>
-      <MenuBar active={active} />
+      <MenuBar active={active} setActive={setActive} />
       <div className={styles.background}>
         <div className={styles.wavesPath}>
           <svg
@@ -32,7 +31,7 @@ export default function Home() {
         <section
           id="user-resume"
           className={styles.userSection}
-          onMouseEnter={() => setActive("user-resume")}
+          onMouseOver={() => setActive("user-resume")}
         >
           <div className={styles.summaryUser}>
             <span> Oi✌️, Eu sou Thomás Dixini </span>
