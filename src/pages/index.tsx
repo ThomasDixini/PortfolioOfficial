@@ -1,10 +1,9 @@
 import styles from "@/styles/home/Home.module.css";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { GrNotes } from "react-icons/gr";
-import dispositivos from "../assets/dispositivos.png";
-import Image from "next/image";
 import { MenuBar } from "@/components/MenuBar";
 import { useState } from "react";
+import { Project } from "@/components/Project";
 
 export default function Home() {
   const [active, setActive] = useState("");
@@ -60,7 +59,12 @@ export default function Home() {
                     </a>
                   </li>
                   <li className={styles.li}>
-                    <a href="../assets/cv.pdf" download className={styles.a}>
+                    <a
+                      href="./cv.pdf"
+                      className={styles.a}
+                      type="application/pdf"
+                      download="cv.pdf"
+                    >
                       {" "}
                       <GrNotes />{" "}
                     </a>
@@ -85,61 +89,10 @@ export default function Home() {
         >
           <h1> Projetos </h1>
           <div className={styles.projects}>
-            <article>
-              <Image
-                src={dispositivos}
-                alt="Imagem de projeto"
-                layout="responsive"
-              />
-              <span> ESTUDO DE CASO </span>
-              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
-              <div>
-                <button type="button"> Ler mais </button>
-                <a href="https://shopthomas.netlify.app/" target="_blank">
-                  {" "}
-                  Link do Projeto{" "}
-                </a>
-              </div>
-            </article>
-            <article>
-              <Image
-                src={dispositivos}
-                alt="Imagem de projeto"
-                layout="responsive"
-              />
-              <span> ESTUDO DE CASO </span>
-              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
-              <div>
-                <button type="button"> Ler mais </button>
-                <a href="#"> Link do Projeto </a>
-              </div>
-            </article>
-            <article>
-              <Image
-                src={dispositivos}
-                alt="Imagem de projeto"
-                layout="responsive"
-              />
-              <span> ESTUDO DE CASO </span>
-              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
-              <div>
-                <button type="button"> Ler mais </button>
-                <a href="#"> Link do Projeto </a>
-              </div>
-            </article>
-            <article>
-              <Image
-                src={dispositivos}
-                alt="Imagem de projeto"
-                layout="responsive"
-              />
-              <span> ESTUDO DE CASO </span>
-              <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
-              <div>
-                <button type="button"> Ler mais </button>
-                <a href="#"> Link do Projeto </a>
-              </div>
-            </article>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
           </div>
         </section>
         <section id="skills" onMouseEnter={() => setActive("skills")}></section>
