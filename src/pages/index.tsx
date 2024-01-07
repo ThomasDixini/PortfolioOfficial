@@ -9,7 +9,7 @@ export default function Home() {
   const [active, setActive] = useState("");
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} id="user-resume">
       <MenuBar active={active} setActive={setActive} />
       <div className={styles.background}>
         <div className={styles.wavesPath}>
@@ -28,7 +28,6 @@ export default function Home() {
       </div>
       <div className={styles.sections}>
         <section
-          id="user-resume"
           className={styles.userSection}
           onMouseOver={() => setActive("user-resume")}
         >
@@ -60,10 +59,9 @@ export default function Home() {
                   </li>
                   <li className={styles.li}>
                     <a
-                      href="./cv.pdf"
+                      href="https://drive.google.com/file/d/1dWBJes5t8wSpAyrmtqSsYXCmnY5E8Ftr/view?usp=drive_link/export?format=pdf"
                       className={styles.a}
-                      type="application/pdf"
-                      download="cv.pdf"
+                      target="_blank"
                     >
                       {" "}
                       <GrNotes />{" "}
@@ -90,12 +88,8 @@ export default function Home() {
           <h1> Projetos </h1>
           <div className={styles.projects}>
             <Project />
-            <Project />
-            <Project />
-            <Project />
           </div>
         </section>
-        <section id="skills" onMouseEnter={() => setActive("skills")}></section>
       </div>
     </main>
   );
