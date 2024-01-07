@@ -35,7 +35,7 @@ export default function Home() {
             <span> Oi✌️, Eu sou Thomás Dixini </span>
             <div className={styles.description}>
               <div className={styles.separationLinks}>
-                <span> REACT </span>
+                <span> WEB </span>
                 <ul className={styles.ul}>
                   <li className={styles.li}>
                     <a
