@@ -10,8 +10,8 @@ export function Project() {
         layout="responsive"
         placeholder="blur"
       />
-      <span> ESTUDO DE CASO </span>
-      <b> ASF ASF AFSAFSAFASF FASFSAFA S</b>
+      <span> IGNITE SHOP </span>
+      <b> Uma simulação de um E-Commerce de camisetas.</b>
       <div>
         <button type="button"> Ler mais </button>
         <a href="https://shopthomas.netlify.app/" target="_blank">
